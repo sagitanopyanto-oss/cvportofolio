@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sagita Nopyanto - HR Generalist & Business Partner dengan pengalaman 15+ tahun">
+    <meta name="keywords" content="HR Generalist, HR Business Partner, Industrial Relations, CHRP, CHRM, CHCM">
+    <meta name="author" content="Sagita Nopyanto">
+    <title>Sagita Nopyanto | HR Business Partner & Generalist</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <div class="logo-circle">SN</div>
+                <span class="brand-name">Sagita Nopyanto</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home"       class="nav-link">Beranda</a></li>
+                <li><a href="#about"      class="nav-link">Tentang</a></li>
+                <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+                <li><a href="#skills"     class="nav-link">Keahlian</a></li>
+                <li><a href="#education"  class="nav-link">Pendidikan</a></li>
+                <li><a href="#contact"    class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero">
+
+        <!-- Decorative blobs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="container hero-grid">
+
+            <!-- LEFT : text -->
+            <div class="hero-text" data-aos="fade-right">
+                <span class="hero-label">
+                    <i class="fas fa-briefcase"></i> HR Professional
+                </span>
+                <h1 class="hero-name">Sagita<br>Nopyanto</h1>
+                <p class="hero-credentials">S.Psi., CHRP, CHRM, CHCM</p>
+                <p class="hero-roles">
+                    HR Generalist &nbsp;|&nbsp; HR Business Partner &nbsp;|&nbsp;
+                    Industrial Relations Specialist
+                </p>
+                <p class="hero-desc">
+                    Profesional HR bersertifikat dengan <strong>15+ tahun pengalaman</strong>
+                    di sektor Pertambangan, Manufaktur, Logistik, Perdagangan & Ritel.
+                    Berfokus pada strategi SDM, hubungan industrial, dan efisiensi operasional.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Tahun Pengalaman</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Perusahaan</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Sertifikasi HR</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Hubungi Saya
+                    </a>
+                    <a href="#experience" class="btn btn-outline">
+                        <i class="fas fa-briefcase"></i> Lihat Pengalaman
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/sagita-nopyanto" target="_blank"
+                       class="social-pill" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="mailto:sagita.nopyanto@gmail.com"
+                       class="social-pill" aria-label="Email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://wa.me/6282256491406" target="_blank"
+                       class="social-pill" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- RIGHT : photo card -->
+            <div class="hero-photo-col" data-aos="fade-left">
+                <div class="photo-card">
+
+                    <!-- Glow ring -->
+                    <div class="photo-ring"></div>
+
+                    <!-- Photo frame -->
+                    <div class="photo-frame">
+                        <img
+                            src="assets/profile.jpg"
+                            alt="Sagita Nopyanto"
+                            class="profile-photo"
+                            id="profilePhoto"
+                            onerror="handleImgError(this)"
+                        >
+                        <!-- Fallback avatar shown by JS if image missing -->
+                        <div class="photo-fallback" id="photoFallback">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Foto Profil</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating badges -->
+                    <div class="badge badge-top-right">
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <strong>CHRP, CHRM</strong>
+                            <small>CHCM Certified</small>
+                        </div>
+                    </div>
+
+                    <div class="badge badge-bottom-left">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <strong>Zero Dispute</strong>
+                            <small>Industrial Relations</small>
+                        </div>
+                    </div>
+
+                    <!-- Location chip -->
+                    <div class="location-chip">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Bogor, Jawa Barat
+                    </div>
+
+                </div>
+            </div>
+
+        </div><!-- /hero-grid -->
+
+        <a href="#about" class="scroll-down" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="section-sub">Profesional HR yang berorientasi pada hasil dan perubahan</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-delay="0">
+                    <div class="about-icon"><i class="fas fa-chess-king"></i></div>
+                    <h3>Strategis & Adaptif</h3>
+                    <p>Berpikir strategis dan adaptif terhadap perubahan, aktif melakukan transformasi sistem organisasi dan pengelolaan risiko bisnis.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-delay="100">
+                    <div class="about-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Industrial Relations</h3>
+                    <p>Berpengalaman dalam menangani hubungan industrial, penyelesaian sengketa bipartit, dan penyusunan regulasi ketenagakerjaan.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-delay="200">
+                    <div class="about-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Efisiensi Operasional</h3>
+                    <p>Fokus pada efisiensi biaya operasional, pengelolaan fasilitas, vendor management, dan peningkatan produktivitas SDM.</p>
+                </div>
+            </div>
+
+            <div class="about-quote" data-aos="fade-up">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <blockquote>
+                    "Siap berkontribusi dan menjadi mitra andalan manajemen untuk menciptakan
+                    kinerja perusahaan yang stabil dan terus berkembang."
+                </blockquote>
+                <div class="quote-author">
+                    <div class="author-avatar">SN</div>
+                    <div>
+                        <strong>Sagita Nopyanto</strong>
+                        <span>HR Professional, 15+ Years</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Riwayat Pekerjaan</h2>
+                <p class="section-sub">Perjalanan karir profesional selama 15+ tahun</p>
+            </div>
+
+            <div class="timeline">
+
+                <!-- 1 -->
+                <div class="tl-item" data-aos="fade-up">
+                    <div class="tl-dot current">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-industry mining">
+                                <i class="fas fa-hard-hat"></i> Mining
+                            </span>
+                            <span class="tl-date">2026 – Sekarang</span>
+                        </div>
+                        <h3 class="tl-role">HRGA Manager</h3>
+                        <h4 class="tl-company">PT Rohul Tata Cahaya</h4>
+                        <ul class="tl-list">
+                            <li>Memimpin strategis SDM terpadu untuk multi-entitas perusahaan</li>
+                            <li>Menjamin kepatuhan regulasi pemerintah & standar K3 di seluruh operasional</li>
+                            <li>Mengelola hubungan industrial kompleks & stabilitas operasional</li>
+                            <li>Restrukturisasi organisasi & optimalisasi biaya operasional</li>
+                        </ul>
+                        <div class="tl-tags">
+                            <span>Multi-Entity</span><span>K3</span><span>Restrukturisasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="tl-item" data-aos="fade-up">
+                    <div class="tl-dot">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-industry trading">
+                                <i class="fas fa-flask"></i> Trading Chemical
+                            </span>
+                            <span class="tl-date">2025 – 2026</span>
+                        </div>
+                        <h3 class="tl-role">Senior HRGA</h3>
+                        <h4 class="tl-company">PT Beruangmas Multikimia</h4>
+                        <ul class="tl-list">
+                            <li>Retensi talenta manajerial <strong>&gt;90%</strong></li>
+                            <li>Penyelesaian sengketa kerja via bipartit tanpa eskalasi hukum</li>
+                            <li>Efisiensi biaya vendor <strong>10–15%</strong> melalui renegosiasi kontrak</li>
+                        </ul>
+                        <div class="tl-tags">
+                            <span>Retensi 90%+</span><span>Bipartit</span><span>Vendor Efficiency</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="tl-item" data-aos="fade-up">
+                    <div class="tl-dot">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-industry mining">
+                                <i class="fas fa-hard-hat"></i> Mining Contractor
+                            </span>
+                            <span class="tl-date">2023 – 2025</span>
+                        </div>
+                        <h3 class="tl-role">HRGA Superintendent</h3>
+                        <h4 class="tl-company">PT Andalan Artha Primanusa</h4>
+                        <ul class="tl-list">
+                            <li>Memimpin divisi HR & GA site pertambangan (<strong>&gt;500 personel</strong>)</li>
+                            <li>Mengelola fasilitas camp, akomodasi & transportasi</li>
+                            <li>Rekrutmen massal ramp-up produksi <strong>100%</strong> terpenuhi</li>
+                            <li>Target Zero Accident melalui budaya K3 ketat</li>
+                        </ul>
+                        <div class="tl-tags">
+                            <span>500+ Personel</span><span>Zero Accident</span><span>Rekrutmen Massal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="tl-item" data-aos="fade-up">
+                    <div class="tl-dot">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-industry manufaktur">
+                                <i class="fas fa-industry"></i> Manufaktur
+                            </span>
+                            <span class="tl-date">2023</span>
+                        </div>
+                        <h3 class="tl-role">Head HRGA</h3>
+                        <h4 class="tl-company">CV Amvva</h4>
+                        <ul class="tl-list">
+                            <li>Membangun fondasi sistem SDM dari awal (greenfield company)</li>
+                            <li>Menyusun struktur organisasi, SOP, dan Peraturan Perusahaan</li>
+                            <li>Merancang struktur remunerasi kompetitif</li>
+                            <li>Mengawasi tata kelola aset pabrik & sistem keselamatan kerja</li>
+                        </ul>
+                        <div class="tl-tags">
+                            <span>Greenfield</span><span>SOP</span><span>Remunerasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="tl-item" data-aos="fade-up">
+                    <div class="tl-dot">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-industry logistik">
+                                <i class="fas fa-truck"></i> Logistik
+                            </span>
+                            <span class="tl-date">2019 – 2023</span>
+                        </div>
+                        <h3 class="tl-role">HR Business Partner</h3>
+                        <h4 class="tl-company">PT Jaya Ekspress Transindo</h4>
+                        <ul class="tl-list">
+                            <li>Mitra strategis manajemen dalam pengambilan keputusan SDM</li>
+                            <li>Perencanaan tenaga kerja menghadapi fluktuasi bisnis & Peak Season</li>
+                            <li>Change Management transisi sistem ke otomasi WMS</li>
+                            <li>Program pelatihan & penilaian kinerja berbasis data</li>
+                        </ul>
+                        <div class="tl-tags">
+                            <span>HRBP</span><span>Change Management</span><span>WMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Earlier experience accordion -->
+                <div class="tl-earlier">
+                    <button class="earlier-toggle" id="earlierBtn" onclick="toggleEarlier()">
+                        <i class="fas fa-history"></i>
+                        Tampilkan Pengalaman Sebelumnya (2010–2019)
+                        <i class="fas fa-chevron-down toggle-icon" id="toggleIcon"></i>
+                    </button>
+                    <div class="earlier-content" id="earlierContent">
+                        <div class="earlier-grid">
+                            <div class="earlier-item">
+                                <div class="ei-header">
+                                    <span class="ei-year">2017–2019</span>
+                                    <span class="tl-industry smelter"><i class="fas fa-fire"></i> Smelter</span>
+                                </div>
+                                <h4>HR Coordinator</h4>
+                                <p>PT Well Harvest Winning</p>
+                                <small>Administrasi HR, grievance handling, koordinasi pelatihan K3 & sertifikasi teknis karyawan operasional.</small>
+                            </div>
+                            <div class="earlier-item">
+                                <div class="ei-header">
+                                    <span class="ei-year">2015–2017</span>
+                                    <span class="tl-industry outsourcing"><i class="fas fa-users"></i> Outsourcing</span>
+                                </div>
+                                <h4>HR Supervisor</h4>
+                                <p>PT Dwitunggal Abadi Permai</p>
+                                <small>Hubungan industrial outsource, akurasi payroll, lembur, insentif & invoicing klien tepat waktu.</small>
+                            </div>
+                            <div class="earlier-item">
+                                <div class="ei-header">
+                                    <span class="ei-year">2014–2015</span>
+                                    <span class="tl-industry ritel"><i class="fas fa-store"></i> Retail</span>
+                                </div>
+                                <h4>HRGA Asst Manager</h4>
+                                <p>PT Foerch Indonesia</p>
+                                <small>Rekrutmen end-to-end, inventarisasi aset bengkel, administrasi PHK sesuai prosedur industrial.</small>
+                            </div>
+                            <div class="earlier-item">
+                                <div class="ei-header">
+                                    <span class="ei-year">2013–2014</span>
+                                    <span class="tl-industry ritel"><i class="fas fa-tshirt"></i> Retail & Fashion</span>
+                                </div>
+                                <h4>HRGA Asst Manager Regional</h4>
+                                <p>PT Columbia</p>
+                                <small>Employee lifecycle management, pengadaan barang, manajemen aset toko & perizinan operasional.</small>
+                            </div>
+                            <div class="earlier-item">
+                                <div class="ei-header">
+                                    <span class="ei-year">2011–2013</span>
+                                    <span class="tl-industry fmcg"><i class="fas fa-boxes"></i> FMCG</span>
+                                </div>
+                                <h4>HR Regional</h4>
+                                <p>PT Atri Distribusindo</p>
+                                <small>Operasional HR & GA cabang regional, rekrutmen, onboarding, verifikasi absensi & komisi penjualan.</small>
+                            </div>
+                            <div class="earlier-item">
+                                <div class="ei-header">
+                                    <span class="ei-year">2010–2011</span>
+                                    <span class="tl-industry fmcg"><i class="fas fa-shopping-basket"></i> Ritel/FMCG</span>
+                                </div>
+                                <h4>Admin HR</h4>
+                                <p>PT Kanzen Kenko</p>
+                                <small>Database karyawan, rekapitulasi absensi, seleksi administrasi rekrutmen & layanan HR dasar.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /timeline -->
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Keahlian</h2>
+                <p class="section-sub">Kompetensi inti & penguasaan tools</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon primary">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>HR Management</h3>
+                    <div class="skill-tags">
+                        <span>Manpower Planning</span>
+                        <span>Recruitment & Selection</span>
+                        <span>Compensation & Benefit</span>
+                        <span>Performance Management</span>
+                        <span>Organization Development</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon warning">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Industrial Relations</h3>
+                    <div class="skill-tags">
+                        <span>Dispute Resolution (Bipartit)</span>
+                        <span>UU Ketenagakerjaan & Cipta Kerja</span>
+                        <span>Company Regulations (PP/PKB)</span>
+                        <span>Grievance Handling</span>
+                        <span>PHK Administration</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon success">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>General Affairs</h3>
+                    <div class="skill-tags">
+                        <span>Asset & Facility Management</span>
+                        <span>Life Support & Transport</span>
+                        <span>K3 & Lingkungan Kerja</span>
+                        <span>Budgeting & Cost Control</span>
+                        <span>Procurement & Vendor Management</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon info">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Tools & Technology</h3>
+                    <div class="skill-tags">
+                        <span>HRIS</span>
+                        <span>Google Workspace</span>
+                        <span>Google Looker Studio</span>
+                        <span>Microsoft Office</span>
+                        <span>Adobe Photoshop</span>
+                        <span>HR Dashboard</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language bar -->
+            <div class="language-section" data-aos="fade-up">
+                <h3>Kemampuan Bahasa</h3>
+                <div class="lang-bars">
+                    <div class="lang-item">
+                        <div class="lang-label">
+                            <span>🇮🇩 Bahasa Indonesia</span>
+                            <span class="lang-level">Fluent</span>
+                        </div>
+                        <div class="lang-bar-bg">
+                            <div class="lang-bar-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-label">
+                            <span>🇬🇧 English</span>
+                            <span class="lang-level">Intermediate</span>
+                        </div>
+                        <div class="lang-bar-bg">
+                            <div class="lang-bar-fill" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pendidikan & Sertifikasi</h2>
+            </div>
+
+            <div class="edu-cert-grid">
+
+                <!-- Education -->
+                <div class="edu-col" data-aos="fade-right">
+                    <h3 class="col-title"><i class="fas fa-graduation-cap"></i> Pendidikan</h3>
+                    <div class="edu-item">
+                        <div class="edu-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="edu-info">
+                            <h4>S1 Psikologi</h4>
+                            <p class="edu-institution">Universitas Esa Unggul</p>
+                            <span class="edu-year">2005 – 2011</span>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <div class="edu-logo secondary">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="edu-info">
+                            <h4>Sekolah Menengah Atas</h4>
+                            <p class="edu-institution">SMA Yuppentek 1</p>
+                            <span class="edu-year">2003 – 2005</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="cert-col" data-aos="fade-left">
+                    <h3 class="col-title"><i class="fas fa-certificate"></i> Sertifikasi Profesional</h3>
+
+                    <div class="cert-card chrp">
+                        <div class="cert-ribbon">Certified</div>
+                        <div class="cert-badge-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="cert-detail">
+                            <h4>CHRP</h4>
+                            <p>Certified Human Resources Professional</p>
+                            <span><i class="fas fa-calendar-alt"></i> Oktober 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card chrm">
+                        <div class="cert-ribbon">Certified</div>
+                        <div class="cert-badge-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="cert-detail">
+                            <h4>CHRM</h4>
+                            <p>Certified Human Resource Management</p>
+                            <span><i class="fas fa-calendar-alt"></i> April 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card chcm">
+                        <div class="cert-ribbon">Certified</div>
+                        <div class="cert-badge-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="cert-detail">
+                            <h4>CHCM</h4>
+                            <p>Certified Human Capital Management</p>
+                            <span><i class="fas fa-calendar-alt"></i> Maret 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card training">
+                        <div class="cert-badge-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="cert-detail">
+                            <h4>Kelas HR Generalist</h4>
+                            <p>Pelatihan Intensif HR Generalist</p>
+                            <span><i class="fas fa-calendar-alt"></i> Maret 2023</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <p class="section-sub">Tertarik untuk berkolaborasi? Mari terhubung.</p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- Info card -->
+                <div class="contact-info-card" data-aos="fade-right">
+                    <!-- Mini profile -->
+                    <div class="contact-profile">
+                        <div class="contact-avatar-wrap">
+                            <img
+                                src="assets/profile.jpg"
+                                alt="Sagita Nopyanto"
+                                class="contact-avatar"
+                                onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';"
+                            >
+                            <div class="avatar-fallback" id="avatarFallback">SN</div>
+                        </div>
+                        <div>
+                            <h3>Sagita Nopyanto</h3>
+                            <p>HR Business Partner & Generalist</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-list">
+                        <a href="https://wa.me/6282256491406" target="_blank" class="contact-row">
+                            <div class="cr-icon phone"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <small>Telepon / WhatsApp</small>
+                                <p>+62 822 5649 1406</p>
+                            </div>
+                            <i class="fas fa-external-link-alt cr-arrow"></i>
+                        </a>
+                        <a href="mailto:sagita.nopyanto@gmail.com" class="contact-row">
+                            <div class="cr-icon email"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <small>Email</small>
+                                <p>sagita.nopyanto@gmail.com</p>
+                            </div>
+                            <i class="fas fa-external-link-alt cr-arrow"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sagita-nopyanto" target="_blank" class="contact-row">
+                            <div class="cr-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <small>LinkedIn</small>
+                                <p>linkedin.com/in/sagita-nopyanto</p>
+                            </div>
+                            <i class="fas fa-external-link-alt cr-arrow"></i>
+                        </a>
+                        <div class="contact-row no-link">
+                            <div class="cr-icon location"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <small>Lokasi</small>
+                                <p>Bogor, Jawa Barat, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="contact-form-card" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Kirim Pesan</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nama Lengkap</label>
+                                <input type="text" placeholder="Nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="email@domain.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Subjek</label>
+                            <input type="text" placeholder="Topik pesan Anda">
+                        </div>
+                        <div class="form-group">
+                            <label>Pesan</label>
+                            <textarea rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            Terima kasih! Pesan Anda telah terkirim.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="logo-circle">SN</div>
+                    <div>
+                        <strong>Sagita Nopyanto, S.Psi., CHRP, CHRM, CHCM</strong>
+                        <p>HR Generalist | HR Business Partner | Industrial Relations Specialist</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Beranda</a>
+                    <a href="#about">Tentang</a>
+                    <a href="#experience">Pengalaman</a>
+                    <a href="#skills">Keahlian</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/sagita-nopyanto" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:sagita.nopyanto@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/6282256491406" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sagita Nopyanto. All rights reserved.</p>
+                <p>Bogor, Jawa Barat, Indonesia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
