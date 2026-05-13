@@ -308,6 +308,7 @@ ul {
     background: var(--border);
 }
 
+/* HERO IMAGE PROFILE */
 .hero-image {
     position: relative;
     display: flex;
@@ -318,13 +319,24 @@ ul {
     width: 340px;
     height: 340px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), #3b82f6);
-    color: rgba(255, 255, 255, 0.28);
+    background: var(--light);
     border: 8px solid var(--white);
     display: grid;
     place-items: center;
-    font-size: 8rem;
     box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.profile-circle i {
+    font-size: 8rem;
+    color: rgba(30, 58, 138, 0.28);
 }
 
 .experience-badge {
@@ -1158,6 +1170,9 @@ ul {
     .profile-circle {
         width: 250px;
         height: 250px;
+    }
+
+    .profile-circle i {
         font-size: 6rem;
     }
 
