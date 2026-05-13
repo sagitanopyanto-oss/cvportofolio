@@ -112,9 +112,15 @@
                 </div>
             </div>
 
+            <!-- IMAGE PROFILE SECTION -->
             <div class="hero-image">
                 <div class="profile-circle">
-                    <i class="fas fa-user-tie"></i>
+                    <img 
+                        src="img/profile.jpg" 
+                        alt="Foto Profil Sagita Nopyanto" 
+                        class="profile-photo"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-user-tie\'></i>'"
+                    >
                 </div>
 
                 <div class="experience-badge">
@@ -642,11 +648,6 @@
                             tabindex="-1" 
                             autocomplete="off"
                         >
-
-                        <!-- Opsional:
-                             Jika URL GitHub Pages sudah aktif, boleh aktifkan redirect berikut:
-                             <input type="hidden" name="_next" value="https://USERNAME.github.io/NAMA-REPO/?sent=success">
-                        -->
 
                         <div class="form-group">
                             <label for="name">Nama Lengkap</label>
